@@ -1,0 +1,18 @@
+# importa do modulo SYS a omstrução ARGV
+from sys import argv
+# pega o argumento informado no prompt
+script, filename = argv
+# abre o arquivo informado no argumento do prompt na variavel TXT
+txt = open(filename)
+# imprime o nome do arquivo informado no argumento do prompt
+print (f'Here\'s your file {filename}:')
+# imprime o conteudo do arquivo da variavel TXT com o comando .read()
+print (txt.read())
+# imprimie
+print('Type the filename again:')
+# pede para digitar o nome de um arquivo para colocar na variavel file_again (sendo o nome do arquivo denovo)
+file_again = input('> ')
+
+txt_again = open(file_again)
+
+print (txt_again.read())
