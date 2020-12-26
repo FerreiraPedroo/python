@@ -1,0 +1,7 @@
+from sys import argv
+
+script, arquivo = argv
+
+arquivo_aberto = open(arquivo)
+
+print (arquivo_aberto.read())
