@@ -1,17 +1,22 @@
+# importa do módulo SYS o método ARGV
 from sys import argv
 
+# aqui você capta o argumento da linha de comando e coloca na variavel filename.
 script, filename = argv
 
 print (f'We\'re going to erase {filename}.')
 print ('If you don\'t want that, hit CRTL-C (^).')
 print ('If you do want that, hit RETURN.')
 
+# solicita ao usuário para digitar algo.
 input ('?')
 
 print ('Opening the file...')
+# abri o arquivo usando OPEN, nome do arquivo armazenado na variavel filename e armazena na variavel target.
 target = open (filename, 'w')
 
 print ('Truncating the file, Goodbye!')
+# zera o arquivo com o método .truncate()
 target.truncate()
 
 print ('Now I\'m goin to ask you for three lines.')
