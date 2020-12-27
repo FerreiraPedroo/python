@@ -1,0 +1,6 @@
+lista_peso = []
+for x in range(1,6):
+    lista_peso = lista_peso + [int(input('Digite o {}º peso: '.format(x)))]
+lista_peso.sort()
+print(f'O menor número da lista é: {lista_peso[0]}')
+print(f'O maior número da lista é: {lista_peso[len(lista_peso)-1]}')
