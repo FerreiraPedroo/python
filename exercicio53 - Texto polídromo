@@ -1,0 +1,17 @@
+texto = input('Digite uma frase : ')
+frente = ""
+tras = ""
+
+for c in range(0,len(texto)):
+
+    if texto[c] != ' ':
+        frente = frente + texto[c]
+        tras = texto[c] + tras
+
+print (frente)
+print (tras)
+
+if frente == tras:
+    print('O texto é POLÍDROMO')
+else:
+    print('O texto não é POLÍDROMO')
