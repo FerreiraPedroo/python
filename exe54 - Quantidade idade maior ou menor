@@ -1,0 +1,18 @@
+ano1 = int(input('Digite o primeiro ano: '))
+ano2 = int(input('Digite o segundo ano: '))
+ano3 = int(input('Digite o terceiro ano: '))
+ano4 = int(input('Digite o quarto ano: '))
+ano5 = int(input('Digite o quinto ano: '))
+ano6 = int(input('Digite o sexto ano: '))
+todos = [ano1,ano2,ano3,ano4,ano5,ano6]
+maior_idade = 0
+menor_idade = 0
+
+for x in range(0,len(todos)):
+    if todos[x] >= 18:
+        maior_idade += 1
+    else:
+        menor_idade += 1
+print (f'Total da idade acima dos 18 anos: {maior_idade}')
+print (f'Total de idade abaixo dos 18 anos: {menor_idade}')
+print ('FIM')
