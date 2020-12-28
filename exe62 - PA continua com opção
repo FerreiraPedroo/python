@@ -17,7 +17,7 @@ while escolha != 'N':
         qtd_termos -= 1
     
     print('Deseja continuar? :', end='')
-    escolha = input('[S/N] : ')
+    escolha = input('[S/N] : ').upper()
     
     if escolha in 'Ss':
         print('Quantas veses mais deseja calcular? ', end='')
