@@ -1,0 +1,25 @@
+fatorial = 0
+opcao = 0
+calculo = 0
+
+print ('='*60)
+fatorial = int(input('Digite um número para calcular o fatorial: '))
+print ('='*60)
+print ('Como deseja calcular')
+print ('[1] WHILE')
+print ('[2] FOR')
+opcao = int(input('Digite um numero :'))
+print ('='*60)
+calculo = fatorial
+print(f'PRINT FATORIAL: {fatorial}')
+if opcao == 1:
+    while fatorial > 0:
+        print(f'PRINT CALCULO: {calculo}')
+        calculo = (calculo * (fatorial-1))
+        fatorial -= 1
+
+if opcao == 2:
+    for c in range(fatorial,0,-1):
+        print(f'PRINT CALCULO: {calculo}')
+        calculo = (calculo * (fatorial-1))
+        fatorial -= 1
