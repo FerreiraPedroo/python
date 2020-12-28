@@ -1,0 +1,8 @@
+import random
+numeroaleatorio = random.randrange(0,9)
+palpite = None
+chances = 0
+while numeroaleatorio != palpite:
+    palpite = int(input ('Adivinhe o número pensado pelo CPU: '))
+    chances += 1
+print(f'Você acertou, o número é: {palpite} e você tentou {chances} vezes.')
