@@ -1,0 +1,24 @@
+pa = 0
+razao = 0
+qtd_termos = 10
+total_termos = 1
+escolha = None
+
+pa = int(input('Digite o primeiro termo da PA: '))
+razao = int(input('Digite a razão da PA: '))
+
+print ('-'*60)
+
+while escolha != 'N':
+    for t in range(0,qtd_termos):
+        print (f'Segue o {total_termos}º: {pa}')
+        pa += razao
+        total_termos += 1
+        qtd_termos -= 1
+    
+    print('Deseja continuar? :', end='')
+    escolha = input('[S/N] : ')
+    
+    if escolha in 'Ss':
+        print('Quantas veses mais deseja calcular? ', end='')
+        qtd_termos = int(input('> '))
