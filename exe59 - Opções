@@ -1,0 +1,41 @@
+opcao = 0
+print('-' * 60)
+print('Digite o 1º número ', end='')
+primeiro = int(input('> '))
+print('Digite o 2º número ', end='')
+segundo = int(input('> '))
+print('-' * 60)
+
+while opcao != 5:
+    print('SELECIONE A OPÇÃO ABAIXO')
+    print('[1] somar')
+    print('[2] multiplicar')
+    print('[3] maior')
+    print('[4] novos números')
+    print('[5] sair do programa')
+    opcao = int(input('> '))
+
+    if opcao == 1:
+        print('OPÇÃO 1 SELECIONADO')
+        print('SOMA = {} + {} = {}'.format(primeiro, segundo, primeiro + segundo))
+        print('-' * 60)
+    if opcao == 2:
+        print('OPÇÃO 2 SELECIONADO')
+        print('MULTIPLICAR = {} * {} = {}'.format(primeiro, segundo, primeiro * segundo))
+        print('-' * 60)
+    if opcao == 3:
+        if primeiro > segundo:
+            print(f'O numero maior é o primeiro: {primeiro}')
+            print('-' * 60)
+        else:
+            print(f'O numero maior é o segundo: {segundo}')
+            print('-' * 60)
+
+    if opcao == 4:
+        print('Digite o 1º número novamente ', end='')
+        primeiro = int(input('> '))
+        print('Digite o 2º número novamente ', end='')
+        segundo = int(input('> '))
+        print('-' * 60)
+
+print ('FIM')
