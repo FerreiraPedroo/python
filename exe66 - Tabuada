@@ -1,0 +1,16 @@
+tabuada = 0
+
+while tabuada >= 0:
+    print ('-'*60)
+    print ('QUAL TABUADA DESEJA VER'.center(60))
+    print ('DIGITE UM NÚMERO NEGATIVO PARA SAIR'.center(60))
+    print ('-'*60)
+    tabuada = int(input('Digite o número da tabuada: '))
+    if tabuada >0:
+        print ('-'*60)
+        print('Tabuada')
+        for t in range(1,10):
+            print(f'{tabuada} x {t} = {tabuada*t}')
+            
+    else:
+        print('\n\n','-'*10,'Você digitou 0','-'*10,'\n\n')
